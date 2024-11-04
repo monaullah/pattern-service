@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <DataCollectionRunSettings>
+    <DataCollectors>
+      <DataCollector friendlyName="XPlat Code Coverage">
+        <Configuration>
+          <CodeCoverage>
+            <ModulePaths>
+              <Include>
+                <ModulePath>.*PatternService.*</ModulePath>
+              </Include>
+            </ModulePaths>
+            <Exclude>
+              <Attribute>^System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute$</Attribute>
+              <Module>.*Test.*</Module>
+            </Exclude>
+            <Thresholds>
+              <Threshold type="method" value="100" />
+            </Thresholds>
+          </CodeCoverage>
+        </Configuration>
+      </DataCollector>
+    </DataCollectors>
+  </DataCollectionRunSettings>
+</RunSettings>

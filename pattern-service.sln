@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatternService", "PatternService\PatternService.csproj", "{7C4D4357-EB66-4CD2-B0AF-9F7A3FC6D1C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternServiceTests", "PatternServiceTests\PatternServiceTests.csproj", "{3026BA50-F64E-42EB-88C9-6246E0A3E121}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7C4D4357-EB66-4CD2-B0AF-9F7A3FC6D1C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C4D4357-EB66-4CD2-B0AF-9F7A3FC6D1C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C4D4357-EB66-4CD2-B0AF-9F7A3FC6D1C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3026BA50-F64E-42EB-88C9-6246E0A3E121}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3026BA50-F64E-42EB-88C9-6246E0A3E121}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3026BA50-F64E-42EB-88C9-6246E0A3E121}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3026BA50-F64E-42EB-88C9-6246E0A3E121}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
