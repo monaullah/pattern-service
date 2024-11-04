@@ -30,16 +30,5 @@ jobs:
     - name: Run tests with coverage
       run: |
         mkdir -p TestResults/coverage
-        dotnet test --no-build --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=TestResults/coverage/ /p:Threshold=100 /p:ThresholdType=method /p:ThresholdStat=Total    
-
-    - name: Report code coverage
-      run: |
-        dotnet tool install --global dotnet-reportgenerator-globaltool
-        ~/.dotnet/tools/reportgenerator -reports:TestResults/coverage/coverage.cobertura.xml -targetdir:coveragereport
-      
-
-    - name: Upload coverage report
-      uses: actions/upload-artifact@v3
-      with:
-        name: coverage-report
-        path: coveragereport
+        dotnet test --no-build --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=TestResults/coverage/ /p:Threshold=100 /p:ThresholdType=method /p:ThresholdStat=Total
+        
